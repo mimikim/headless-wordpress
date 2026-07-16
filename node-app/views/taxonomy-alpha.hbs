@@ -1,0 +1,11 @@
+<h1 class="page-title">{{ title }}</h1>
+
+{{> alpha-navigation }}
+
+<ul class="nobullet-list">
+	{{# each response }}
+		<li>
+			<a href="/{{post_type}}/{{ slug }}">{{title}}</a>
+		</li>
+	{{/each}}
+</ul>

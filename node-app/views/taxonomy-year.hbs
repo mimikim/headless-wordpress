@@ -1,0 +1,25 @@
+<h1 class="page-title">{{ title }}</h1>
+
+{{> timeline-navigation }}
+
+<div class="year-links">
+	{{{year-links slug }}}
+</div>
+
+<div class="timeline-content">
+	{{# each response }}
+		<div class="partial">
+			<h2>{{convert-date date }}</h2>
+			<h3>{{ title }}</h3>
+			<div>
+				{{{ content }}}
+			</div>
+		</div>
+	{{/each}}
+</div>
+
+<div class="year-links">
+	{{{year-links slug }}}
+</div>
+
+{{> timeline-footer }}

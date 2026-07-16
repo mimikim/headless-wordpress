@@ -1,0 +1,16 @@
+<div class="alpha-navigation">
+	<ul class="inline-list">
+		{{# each alpha_nav }}
+			<li>
+				{{#if this.count }}
+					<a href="/{{ post_type }}/alpha/{{ this.slug }}">{{ this.title }}</a>
+				{{ else }}
+					{{ this.title }}
+				{{/if }}
+			</li>
+		{{/each}}
+		<li>
+			<a href="/{{ post_type }}/alpha">See All</a>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,12 @@
+<h1 class="page-title">{{ title }}</h1>
+
+<div class="content">
+	{{{ content }}}
+</div>
+
+{{# each archives }}
+	<div class="partial">
+		<h3><a href="/archives/{{ slug }}">{{ title }}</a></h3>
+		{{{ authors }}}
+	</div>
+{{/each}}

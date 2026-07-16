@@ -1,0 +1,15 @@
+<h1 class="page-title">{{ title }}</h1>
+
+<div class="content">
+	{{{ content }}}
+</div>
+
+{{# each sources }}
+	<div class="partial">
+		<h3><cite>{{title}}</cite></h3>
+		<div>Authors: {{ authors }}</div>
+		<div>
+			{{{ content }}}
+		</div>
+	</div>
+{{/each}}

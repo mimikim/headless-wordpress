@@ -1,0 +1,32 @@
+a {
+  color: $blue;
+
+  &:visited {
+    //color: $red;
+  }
+
+  &:hover,
+  &:focus {
+    color: $gold;
+  }
+}
+
+p {
+  margin-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.small-title {
+  font-size: 12px;
+}
+
+.active-link {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+<h1 class="page-title">{{ title }}</h1>
+
+<ul class="nobullet-list">
+	{{# each index }}
+		<li>
+			<a href="/{{ type }}/{{ slug }}">{{ title }}</a>
+		</li>
+	{{/each}}
+</ul>
